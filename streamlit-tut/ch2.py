@@ -15,3 +15,14 @@ st.write(f"selected flavour: {flavour}")
 
 sugar_level = st.slider("sugar level: ", 0,5,2)
 st.write(f"this is the sugar level {sugar_level}")
+
+# below is the uncontrolled input
+cups = st.number_input("how many cups: ", min_value=1, max_value=10, step=1)
+st.write(f"this is the number of cups: {cups}")
+
+name= st.text_input("enter your name:")
+if name:
+    st.write(f"your coffee is on the way, {name}")
+
+dob = st.date_input("enter your dob, nigga")
+st.write(f"so {dob} that's your dob nigga?")
